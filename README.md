@@ -7,6 +7,8 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:5050`](http://localhost:5050) from your browser.
 
+Run local database with docker: `docker run --name x_budget_dev -p 5432:5432 -e POSTGRES_USER=x_budget -e POSTGRES_PASSWORD=blork -d postgres`.
+
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
