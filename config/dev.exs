@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :x_budget, XBudget.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "x_budget",
+  password: "blork_erlang",
   hostname: "localhost",
-  database: "x_budget_dev",
+  database: "x_budget_db",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -19,7 +19,7 @@ config :x_budget, XBudget.Repo,
 config :x_budget, XBudgetWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {127, 0, 0, 1}, port: 5050],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
