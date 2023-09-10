@@ -3,9 +3,9 @@ import Config
 # Configure your database
 config :x_budget, XBudget.Repo,
   username: "x_budget",
-  password: "blork_erlang",
+  password: "blork",
   hostname: "localhost",
-  database: "x_budget_db",
+  database: "x_budget_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
