@@ -77,3 +77,11 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+# import config/dev.local.exs for contribution
+if File.exists?("#{__DIR__}/#{Mix.env()}.local.exs") do
+  import_config("#{Mix.env()}.local.exs")
+else
+  require Logger
+  Logger.warn("Didn't find '#{Mix.env()}.local.exs'")
+end
