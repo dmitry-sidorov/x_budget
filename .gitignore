@@ -34,4 +34,6 @@ x_budget-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
+*.local.exs
+*.vscode
 
